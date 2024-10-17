@@ -1,0 +1,6 @@
+# dune init lib moz
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/henningtonko/.cache/dune/db
+# Workspace root: /Users/henningtonko/Documents/Programming/ocaml/moz
+# Auto-detected concurrency: 8
