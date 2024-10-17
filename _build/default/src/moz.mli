@@ -1,5 +1,3 @@
-val henning : string
-
-module Compose : sig
-val foo : int
+module MozList : sig
+val remove_duplicates : 'a list -> 'a list
 end

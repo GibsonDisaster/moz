@@ -1,3 +1,1 @@
-let henning = "henning"
-
-module Compose = Moz_compose
+module MozList = Moz_list

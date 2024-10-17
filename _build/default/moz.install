@@ -14,12 +14,12 @@ lib: [
   "_build/install/default/lib/moz/moz__.cmt"
   "_build/install/default/lib/moz/moz__.cmx"
   "_build/install/default/lib/moz/moz__.ml"
-  "_build/install/default/lib/moz/moz__Moz_compose.cmi"
-  "_build/install/default/lib/moz/moz__Moz_compose.cmt"
-  "_build/install/default/lib/moz/moz__Moz_compose.cmti"
-  "_build/install/default/lib/moz/moz__Moz_compose.cmx"
-  "_build/install/default/lib/moz/moz_compose.ml"
-  "_build/install/default/lib/moz/moz_compose.mli"
+  "_build/install/default/lib/moz/moz__Moz_list.cmi"
+  "_build/install/default/lib/moz/moz__Moz_list.cmt"
+  "_build/install/default/lib/moz/moz__Moz_list.cmti"
+  "_build/install/default/lib/moz/moz__Moz_list.cmx"
+  "_build/install/default/lib/moz/moz_list.ml"
+  "_build/install/default/lib/moz/moz_list.mli"
   "_build/install/default/lib/moz/opam"
 ]
 libexec: [
