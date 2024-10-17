@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "moz.cma"
+archive(native) = "moz.cmxa"
+plugin(byte) = "moz.cma"
+plugin(native) = "moz.cmxs"

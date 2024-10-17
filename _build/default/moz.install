@@ -1,0 +1,30 @@
+lib: [
+  "_build/install/default/lib/moz/META"
+  "_build/install/default/lib/moz/dune-package"
+  "_build/install/default/lib/moz/moz.a"
+  "_build/install/default/lib/moz/moz.cma"
+  "_build/install/default/lib/moz/moz.cmi"
+  "_build/install/default/lib/moz/moz.cmt"
+  "_build/install/default/lib/moz/moz.cmti"
+  "_build/install/default/lib/moz/moz.cmx"
+  "_build/install/default/lib/moz/moz.cmxa"
+  "_build/install/default/lib/moz/moz.ml"
+  "_build/install/default/lib/moz/moz.mli"
+  "_build/install/default/lib/moz/moz__.cmi"
+  "_build/install/default/lib/moz/moz__.cmt"
+  "_build/install/default/lib/moz/moz__.cmx"
+  "_build/install/default/lib/moz/moz__.ml"
+  "_build/install/default/lib/moz/moz__Moz_compose.cmi"
+  "_build/install/default/lib/moz/moz__Moz_compose.cmt"
+  "_build/install/default/lib/moz/moz__Moz_compose.cmti"
+  "_build/install/default/lib/moz/moz__Moz_compose.cmx"
+  "_build/install/default/lib/moz/moz_compose.ml"
+  "_build/install/default/lib/moz/moz_compose.mli"
+  "_build/install/default/lib/moz/opam"
+]
+libexec: [
+  "_build/install/default/lib/moz/moz.cmxs"
+]
+doc: [
+  "_build/install/default/doc/moz/README.md"
+]

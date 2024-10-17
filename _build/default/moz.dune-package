@@ -1,0 +1,59 @@
+(lang dune 3.16)
+(name moz)
+(sections (lib .) (libexec .) (doc ../../doc/moz))
+(files
+ (lib
+  (META
+   dune-package
+   moz.a
+   moz.cma
+   moz.cmi
+   moz.cmt
+   moz.cmti
+   moz.cmx
+   moz.cmxa
+   moz.ml
+   moz.mli
+   moz__.cmi
+   moz__.cmt
+   moz__.cmx
+   moz__.ml
+   moz__Moz_compose.cmi
+   moz__Moz_compose.cmt
+   moz__Moz_compose.cmti
+   moz__Moz_compose.cmx
+   moz_compose.ml
+   moz_compose.mli
+   opam))
+ (libexec (moz.cmxs))
+ (doc (README.md)))
+(library
+ (name moz)
+ (kind normal)
+ (archives (byte moz.cma) (native moz.cmxa))
+ (plugins (byte moz.cma) (native moz.cmxs))
+ (native_archives moz.a)
+ (main_module_name Moz)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name moz__)
+     (visibility public)
+     (kind alias)
+     (source (path Moz__) (impl (path moz__.ml-gen))))
+    (name Moz)
+    (modules
+     (module
+      (obj_name moz)
+      (visibility public)
+      (source (path Moz) (intf (path moz.mli)) (impl (path moz.ml))))
+     (module
+      (obj_name moz__Moz_compose)
+      (visibility public)
+      (source
+       (path Moz_compose)
+       (intf (path moz_compose.mli))
+       (impl (path moz_compose.ml))))))
+   (wrapped true))))
