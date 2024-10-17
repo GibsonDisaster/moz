@@ -1,1 +1,1 @@
-src/moz.ml: Moz_compose
+src/moz.ml:
