@@ -1,11 +1,4 @@
-module MozList : sig
-val remove_duplicates : 'a list -> 'a list
-val step_range : int -> int -> int -> int list
-val make_coords : int -> int -> int -> (int * int) list
-end
-
-module MozECS : sig
-  (* Credit to: VLanvin (https://github.com/VLanvin/ECS) *)
+(* Credit to: VLanvin (https://github.com/VLanvin/ECS) *)
 
 module type KEY = sig
   type t
@@ -84,4 +77,3 @@ module Make :
           (module COMPONENT) list -> (entity list)
     
     end
-end

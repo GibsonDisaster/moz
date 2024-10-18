@@ -1,4 +1,4 @@
-# dune build
+# dune build --profile release
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/henningtonko/.cache/dune/db
@@ -7,22 +7,10 @@
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
-#  ; profile = Dev
+#  ; profile = Release
 #  ; merlin = true
 #  ; fdo_target_exe = None
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -config > /var/folders/zb/wzszw6vj4q5dcmds5qnv9bzh0000gn/T/dune_a546ca_output
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamldep.opt -modules -impl src/moz_list.ml) > _build/default/src/.moz.objs/moz__Moz_list.impl.d
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamldep.opt -modules -intf src/moz.mli) > _build/default/src/.moz.objs/moz.intf.d
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamldep.opt -modules -intf src/moz_list.mli) > _build/default/src/.moz.objs/moz__Moz_list.intf.d
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I src/.moz.objs/byte -no-alias-deps -opaque -open Moz__ -o src/.moz.objs/byte/moz.cmi -c -intf src/moz.mli)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I src/.moz.objs/byte -no-alias-deps -opaque -open Moz__ -o src/.moz.objs/byte/moz__Moz_list.cmi -c -intf src/moz_list.mli)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I src/.moz.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Moz__ -o src/.moz.objs/byte/moz.cmo -c -impl src/moz.ml)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I src/.moz.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Moz__ -o src/.moz.objs/byte/moz__Moz_list.cmo -c -impl src/moz_list.ml)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/moz.cma src/.moz.objs/byte/moz__.cmo src/.moz.objs/byte/moz__Moz_list.cmo src/.moz.objs/byte/moz.cmo)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.moz.objs/byte -I src/.moz.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Moz__ -o src/.moz.objs/native/moz.cmx -c -impl src/moz.ml)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.moz.objs/byte -I src/.moz.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Moz__ -o src/.moz.objs/native/moz__Moz_list.cmx -c -impl src/moz_list.ml)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/moz.cmxa src/.moz.objs/native/moz__.cmx src/.moz.objs/native/moz__Moz_list.cmx src/.moz.objs/native/moz.cmx)
-$ (cd _build/default && /Users/henningtonko/.opam/my_proj/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I src -o src/moz.cmxs src/moz.cmxa)
+$ /Users/henningtonko/.opam/my_proj/bin/ocamlc.opt -config > /var/folders/zb/wzszw6vj4q5dcmds5qnv9bzh0000gn/T/dune_0c733d_output

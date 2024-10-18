@@ -18,10 +18,16 @@
    moz__.cmt
    moz__.cmx
    moz__.ml
+   moz__Moz_ecs.cmi
+   moz__Moz_ecs.cmt
+   moz__Moz_ecs.cmti
+   moz__Moz_ecs.cmx
    moz__Moz_list.cmi
    moz__Moz_list.cmt
    moz__Moz_list.cmti
    moz__Moz_list.cmx
+   moz_ecs.ml
+   moz_ecs.mli
    moz_list.ml
    moz_list.mli
    opam))
@@ -49,6 +55,13 @@
       (obj_name moz)
       (visibility public)
       (source (path Moz) (intf (path moz.mli)) (impl (path moz.ml))))
+     (module
+      (obj_name moz__Moz_ecs)
+      (visibility public)
+      (source
+       (path Moz_ecs)
+       (intf (path moz_ecs.mli))
+       (impl (path moz_ecs.ml))))
      (module
       (obj_name moz__Moz_list)
       (visibility public)
